@@ -1,0 +1,41 @@
+<div class="card">
+	<div class="card-header">
+		Agregar empleado
+	</div>
+	<div class="card-body">
+
+		<form ngNativeValidate [formGroup]="formularioDeEmpleado" (ngSubmit)="enviarDatos()">
+
+			<div class="mb-3">
+				<label for="" class="form-label">Nome</label>
+				<input required type="text" class="form-control" name="" formControlName="nome" id=""
+					aria-describedby="helpId" placeholder="">
+			</div>
+
+			<div class="mb-3">
+				<label for="" class="form-label">Email</label>
+				<input required type="email" class="form-control" name="" formControlName="email" id=""
+					aria-describedby="helpId" placeholder="">
+			</div>
+
+      <div class="mb-3">
+				<label for="" class="form-label">coruja</label>
+				<input required type="text" class="form-control" name="" formControlName="coruja" id=""
+					aria-describedby="helpId" placeholder="">
+			</div>
+
+      <div class="mb-3">
+				<label for="" class="form-label">Bios</label>
+				<input required type="text" class="form-control" name="" formControlName="bios" id=""
+					aria-describedby="helpId" placeholder="">
+			</div>
+
+			<div class="btn-group" role="group" aria-label="">
+				<button type="submit" class="btn btn-success">Agregar</button>
+				<button type="button" class="btn btn-primary" routerLink="/lista">Cancelar</button>
+			</div>
+
+		</form>
+
+	</div>
+</div>
